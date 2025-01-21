@@ -100,7 +100,7 @@ nav{
 /* ==== Curriculum Section ==== */
 
 .background-img{
-    background-image: url("/assets/bg.png");
+    background-image: url("assets/bg.png");
     background-repeat: repeat;
     background-size: cover;
     width: 80%;
@@ -109,6 +109,7 @@ nav{
 
 .curriculum{
     text-align: center;
+    
 }
 
 .curriculum h1{
@@ -119,8 +120,9 @@ nav{
 }
 
 .curriculum-cards{
-    justify-content: space-between;
-    
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -131,6 +133,7 @@ nav{
     align-items: center;
     gap: 42px;
     border-radius: 19px;
+    box-shadow: 0px 0px 28.3px rgba(0, 0, 0, 0.05);
 }
 
 .card-1{
@@ -161,23 +164,72 @@ nav{
     color: rgba(128, 128, 128, 1);
 }
 
-.read-more-1{
+.read-more{
     margin-top: 20px;
-    color: #64C8FF;
     cursor: pointer;
+    font-weight: bold;
+}
+.read-more-1{
+    color: #64C8FF;
 }
 
 .read-more-2{
-    margin-top: 20px;
     color: #F0AA00;
-    cursor: pointer;
 }
 
 .read-more-3{
-    margin-top: 20px;
     color: #8700FF;
+}
+
+/* ==== arrow ==== */
+
+.arrows{
+    justify-content: center;
+    gap: 10px;
+    margin: 80px 0px;
+}
+
+.arrows button{
+    background-color: #FEA301;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    font-size: 24px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    border: none;
     cursor: pointer;
 }
+
+
+/* ==== Our Stories Card ==== */
+
+.section{
+    height: 600px;
+    background-image: linear-gradient(0deg, rgba(254, 163, 1, 1), rgba(255, 255, 255, 1)), url("assets/bg.png");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.our-stories{
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.our-stories h1{
+    font-weight: bold;
+    font-size: 46px;
+    margin-bottom: 80px;
+}
+
+.class-storie-card{
+    width: 40%;
+    height: 44%;
+    background-color: #ac0f0f;
+}
+
 
 
 
@@ -189,6 +241,12 @@ nav{
 /* === media query === */
 
 @media screen and (max-width: 576px){
+
+    /* Button */
+
+    .primary-btn{
+        font-size: 18PX;
+    }
 
     /* nav */
 
@@ -204,7 +262,7 @@ nav{
         display: none;
     }
     .full-screen-hide{
-        display: inline;
+        display: initial;
     }
     .icon{
         font-size: 30px;
@@ -234,40 +292,18 @@ nav{
         height: 56%;
     }
 
-    /* Card */
+    /* background */
 
-    .curriculum-cards{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .background-img{
-        background-image: url("/assets/bg.png");
-        background-repeat: repeat;
-        background-size: cover;
-        width: 100%;
-        margin: 20px auto;
-    }
-
-    .card{
-        width: 357px;
-        height: 321px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 42px;
-        border-radius: 19px;
-    }
+   
 
 }
 
 /* ===medium device=== */
 
-/* @media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 992px){
 
-    .curriculum-cards{
-        flex-wrap: wrap;
-        gap: 20px;
+    .hide-school{
+        display: none;
     }
 
-} */
+}
