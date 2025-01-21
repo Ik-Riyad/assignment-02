@@ -43,6 +43,13 @@
     display: none;
 }
 
+.primary-content{
+    font-weight: 500;
+    font-size: 0.93rem;
+    line-height: 28px;
+    color: rgba(128, 128, 128, 1);
+}
+
 
 /* ==== navbar ==== */
 
@@ -66,6 +73,16 @@ nav{
 
 .nav-btn{
     background-color: #FEA301;
+}
+
+.primary-card-btn{
+    color: #FFFFFF;
+    font-family: "Raleway", serif;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 47px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 /* === banner === */
@@ -156,13 +173,6 @@ nav{
     line-height: 30px;
 }
 
-.card .pera{
-    font-weight: 500;
-    font-size: 0.93rem;
-    line-height: 28px;
-    color: rgba(128, 128, 128, 1);
-}
-
 .read-more{
     margin-top: 20px;
     cursor: pointer;
@@ -205,7 +215,6 @@ nav{
 /* ==== Our Stories Card ==== */
 
 .section{
-    height: 600px;
     background-image: linear-gradient(0deg, rgba(254, 161, 1, 0.342), rgba(255, 255, 255, 1)), url("assets/bg.png");
     background-repeat: repeat;
     background-size: cover;
@@ -213,7 +222,7 @@ nav{
 
 .our-stories{
     width: 80%;
-    margin: 80px auto;
+    margin: 0px auto;
     text-align: center;
 }
 
@@ -225,9 +234,76 @@ nav{
 
 .class-storie-card{
     width: 40%;
-    height: 44%;
-    background-color: #ac0f0f;
+    height: 650px;
+    text-align: left;
+    padding-left: 0%;
+    border-radius: 16px;
 }
+
+.class-storie-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px  0px ;
+}
+
+.card-content button{
+    background-color: #3CD8E8;
+}
+
+.card-content h3{
+    padding: 45px 0px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-content{
+    background-color: #FFFFFF;
+    padding: 0px 38px;
+    margin-top: -30px;
+    height: 50%;
+    border-radius: 16px;
+}
+
+/* === Story mini card === */
+
+
+.storie-card{
+    width: 20%;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.storie-card img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.mini-card-content {
+    text-align: left;
+    padding: 0px 40px;
+    margin-top: -30px;
+}
+
+.mini-card-content button{
+    background-color: #95B226;
+}
+
+.mini-card-content p{
+    font-weight: bold;
+    font-size: 0.93rem;
+    padding: 23px 0px;
+}
+
+
+
+
+
+/* === View all button === */
+
+.view-all-btn{
+    margin: 80px 0px;
+    background-color: black;
+}
+
 
 
 
@@ -291,23 +367,13 @@ nav{
         height: 56%;
     }
 
-    /* background-image */
-
-    /* .background-img{
-        background-image: url("/assets/bg.png");
-        background-repeat: repeat;
-        background-size: cover;
-        width: 100%;
-        margin: 20px auto;
-    } */
-
 }
 
 /* ===medium device=== */
 
 @media screen and (min-width: 576px) and (max-width: 992px){
 
-    .hide-school{
+    .hide-medium{
         display: none;
     }
 
