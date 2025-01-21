@@ -119,8 +119,9 @@ nav{
 }
 
 .curriculum-cards{
-    justify-content: space-between;
-    
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -249,15 +250,13 @@ nav{
         margin: 20px auto;
     }
 
-    .card{
-        width: 357px;
-        height: 321px;
+    /* .card{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 42px;
         border-radius: 19px;
-    }
+    } */
 
 }
 
