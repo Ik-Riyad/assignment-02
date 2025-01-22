@@ -39,6 +39,17 @@
     cursor: pointer;
 }
 
+.primary-btn:hover{
+    padding: 10px 60px;
+    border-radius: 12px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Quicksand", serif;
+    cursor: pointer;
+}
+
 .full-screen-hide{
     display: none;
 }
@@ -71,6 +82,10 @@ nav{
     align-items: center;
 }
 
+.nav-logo{
+    cursor: pointer;
+}
+
 .nav-logo h1{
     padding-left: 11px;
     font-weight: bold;
@@ -84,8 +99,22 @@ nav{
     font-size: 20px;
 }
 
+.nav-options h3{
+    cursor: pointer;
+}
+.nav-options h3:hover{
+    text-shadow: 0px 0px 28.3px #FEA301;
+}
+
 .nav-btn{
     background-color: #FEA301;
+    border: 1px solid #FEA301;
+    transition: 0.3s;
+}
+
+.nav-btn:hover{
+    border: 1px solid #FEA301;
+    color: #FEA301;
 }
 
 .primary-card-btn{
@@ -95,7 +124,6 @@ nav{
     border: none;
     border-radius: 47px;
     font-size: 15px;
-    cursor: pointer;
 }
 
 /* === banner === */
@@ -124,8 +152,14 @@ nav{
 
 .banner-btn{
     background-color: black;
+    border: 1px solid black;
+    transition: 0.3s;
 }
 
+.banner-btn:hover{
+    color: black;
+    border: 1px solid black;
+}
 
 /* ==== Curriculum Section ==== */
 
@@ -163,6 +197,11 @@ nav{
     gap: 42px;
     border-radius: 19px;
     box-shadow: 0px 0px 28.3px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 28.3px rgba(0, 0, 0, 0.15);
 }
 
 .card-1{
@@ -218,6 +257,20 @@ nav{
     border-radius: 100px;
     font-size: 24px;
     color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrows button:hover{
+    background-color: transparent;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    font-size: 50px;
+    color: #FEA301;
     align-items: center;
     justify-content: center;
     border: none;
@@ -333,6 +386,14 @@ nav{
 .view-all-btn{
     margin: 80px 0px;
     background-color: black;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.view-all-btn:hover{
+    margin: 80px 0px;
+    color: black;
+    border: 1px solid black;
 }
 
 
