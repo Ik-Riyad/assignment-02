@@ -50,6 +50,19 @@
     color: rgba(128, 128, 128, 1);
 }
 
+/* marque */
+
+.headline{
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.headline .admission{
+    color: #FEA301;
+}
+
 
 /* ==== navbar ==== */
 
@@ -214,11 +227,13 @@ nav{
 
 /* ==== Our Stories Card ==== */
 
-.section{
+ .section-bg-img{
     background-image: linear-gradient(0deg, rgba(254, 161, 1, 0.342), rgba(255, 255, 255, 1)), url("assets/bg.png");
     background-repeat: repeat;
     background-size: cover;
 }
+
+
 
 .our-stories{
     width: 80%;
@@ -226,19 +241,22 @@ nav{
     text-align: center;
 }
 
+
+
+
 .our-stories h1{
     font-weight: bold;
     font-size: 46px;
     margin-bottom: 80px;
 }
 
+
 .class-storie-card{
-    width: 40%;
-    height: 650px;
+    width: 560px;
     text-align: left;
-    padding-left: 0%;
     border-radius: 16px;
 }
+
 
 .class-storie-card img{
     width: 100%;
@@ -249,30 +267,28 @@ nav{
     background-color: #3CD8E8;
 }
 
+.card-content{
+    background-color: #FFFFFF;
+    padding: 0px 38px 80px 38px;
+    margin-top: -30px;
+    border-radius: 16px;    
+}
+
 .card-content h3{
     padding: 45px 0px;
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-.card-content{
-    background-color: #FFFFFF;
-    padding: 0px 38px;
-    margin-top: -30px;
-    height: 50%;
-    border-radius: 16px;
-}
-
 /* === Story mini card === */
 
 
-.storie-card{
-    width: 20%;
+.st-card{
     background-color: #FFFFFF;
     border-radius: 16px;
 }
 
-.storie-card img{
+.st-card img{
     width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
@@ -290,10 +306,25 @@ nav{
 .mini-card-content p{
     font-weight: bold;
     font-size: 0.93rem;
-    padding: 23px 0px;
+    padding: 25px 0px;
+    line-height: 29px;
 }
 
+#guiter-btn{
+    background-color: #5D58F0;
+}
 
+/* === card grid === */
+
+.card-stories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#spn-card{
+    grid-row: span 2;
+}
 
 
 
@@ -305,7 +336,78 @@ nav{
 }
 
 
+/* ===== footer-content */
 
+footer{
+    background-color: #01ACFD;
+}
+
+.footer-content{
+    width: 80%;
+    margin: 0px auto;
+    padding: 140px 0px;
+    justify-content: space-around;
+}
+
+/* ===== Logo ===== */
+
+.kids-logo{
+    gap: 10px;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.kids-logo h1{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.kids-education p{
+    font-size: 20px;
+    padding-top: 35px;
+    color: #FFFFFF;
+}
+
+/* ===== about-school ===== */
+
+.about-school h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.about-school ul{
+    padding: 32px 0px;
+    list-style: none;
+}
+
+.about-school ul li{
+    padding: 10px 0px;
+}
+
+.about-school ul li a{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* ===== Social-media ===== */
+
+.social-media h3{
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFFFFF;
+    padding-bottom: 32px;
+}
+
+.img-left-padding{
+    padding-left: 10px;
+}
+.social-media img{
+    cursor: pointer;
+}
 
 
 
@@ -320,7 +422,7 @@ nav{
     /* Button */
 
     .primary-btn{
-        font-size: 18PX;
+        font-size: 16PX;
     }
 
     /* nav */
@@ -367,6 +469,27 @@ nav{
         height: 56%;
     }
 
+    /* mini-card */
+
+    .card-stories{
+        grid-template-columns: 1fr;
+    }
+
+    /* footer */
+
+    .footer-content{
+        flex-direction: column;
+    }
+
+    .about-school{
+        margin: 50px 0px;
+    }
+
+    /* marque */
+
+    .headline{
+        border: none;
+    }
 }
 
 /* ===medium device=== */
@@ -375,6 +498,20 @@ nav{
 
     .hide-medium{
         display: none;
+    }
+
+    /* cards */
+
+    .card-stories{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #spn-card{
+        grid-column: span 2;
+        margin: auto;
+    }
+    .img-left-padding{
+        padding-left: 0px;
     }
 
 }
