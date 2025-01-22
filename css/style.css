@@ -294,7 +294,7 @@ nav{
 
 .our-stories h1{
     font-weight: bold;
-    font-size: 46px;
+    font-size: 2.8rem;
     margin-bottom: 80px;
 }
 
@@ -511,6 +511,20 @@ footer{
     .vision-img{
         width: 94%;
         height: 56%;
+    }
+
+    /* Card */
+
+    .curriculum h1{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    /* Stories */
+
+    .our-stories h1{
+        font-weight: bold;
+        font-size: 2rem;
     }
 
     /* mini-card */
