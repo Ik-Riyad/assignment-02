@@ -164,8 +164,8 @@ nav{
 /* ==== Curriculum Section ==== */
 
 .background-img{
-    background-image: url("assets/bg.png");
-    background-repeat: repeat;
+    background-image: url("/assets/bg.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -280,13 +280,11 @@ nav{
 
 /* ==== Our Stories Card ==== */
 
- .section-bg-img{
-    background-image: linear-gradient(0deg, rgba(254, 161, 1, 0.342), rgba(255, 255, 255, 1)), url("assets/bg.png");
-    background-repeat: repeat;
+.section-bg-img{
+    background-image: linear-gradient(0deg, rgba(254, 161, 1, 0.342), rgba(255, 255, 255, 1)), url("/assets/bg.png");
+    background-repeat: no-repeat;
     background-size: cover;
 }
-
-
 
 .our-stories{
     width: 80%;
@@ -294,22 +292,17 @@ nav{
     text-align: center;
 }
 
-
-
-
 .our-stories h1{
     font-weight: bold;
     font-size: 46px;
     margin-bottom: 80px;
 }
 
-
 .class-storie-card{
     width: 560px;
     text-align: left;
     border-radius: 16px;
 }
-
 
 .class-storie-card img{
     width: 100%;
@@ -334,7 +327,6 @@ nav{
 }
 
 /* === Story mini card === */
-
 
 .st-card{
     background-color: #FFFFFF;
@@ -379,8 +371,6 @@ nav{
     grid-row: span 2;
 }
 
-
-
 /* === View all button === */
 
 .view-all-btn{
@@ -395,7 +385,6 @@ nav{
     color: black;
     border: 1px solid black;
 }
-
 
 /* ===== footer-content */
 
@@ -469,12 +458,6 @@ footer{
 .social-media img{
     cursor: pointer;
 }
-
-
-
-
-
-
 
 /* === media query === */
 
