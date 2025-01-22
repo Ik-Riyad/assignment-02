@@ -572,4 +572,20 @@ footer{
         padding-left: 0px;
     }
 
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .nav-btn{
+    padding: 10px 30px;
+    font-size: 16px;
+    }
+
+    .nav-options{
+        gap: 20px;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 0px 10px;
+    }
+
 }
