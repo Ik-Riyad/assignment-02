@@ -3,31 +3,32 @@
     padding: 0;
 }
 
-.quicksand-primary-text{
+.quicksand-primary-text {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: auto;
     font-style: normal;
-  }
+}
 
-.raleway-secondary-text{
-  font-family: "Raleway", serif;
-  font-optical-sizing: auto;
-  font-weight: auto;
-  font-style: normal;
+.raleway-secondary-text {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
 }
 
 /* ===== common-style ===== */
 
-.content-width{
+.content-width {
     width: 80%;
     margin: 20px auto;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
 }
 
-.primary-btn{
+.primary-btn {
     padding: 10px 60px;
     border-radius: 12px;
     color: #FFFFFF;
@@ -39,7 +40,7 @@
     cursor: pointer;
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
     padding: 10px 60px;
     border-radius: 12px;
     background-color: transparent;
@@ -50,11 +51,11 @@
     cursor: pointer;
 }
 
-.full-screen-hide{
+.full-screen-hide {
     display: none;
 }
 
-.primary-content{
+.primary-content {
     font-weight: 500;
     font-size: 0.93rem;
     line-height: 28px;
@@ -63,61 +64,68 @@
 
 /* marque */
 
-.headline{
+.headline {
     font-weight: bold;
     font-size: 20px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-.headline .admission{
+.headline .admission {
     color: #0199fe;
 }
 
 
 /* ==== navbar ==== */
 
-nav{
+nav {
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
     cursor: pointer;
 }
 
-.nav-logo h1{
+.nav-logo h1 {
     padding-left: 11px;
     font-weight: bold;
     font-size: 32px;
     margin: auto;
 }
 
-.nav-options{
-    gap: 32px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.nav-options h3{
-    cursor: pointer;
-}
-.nav-options h3:hover{
+.nav-logo h1:hover {
     text-shadow: 0px 0px 28.3px #FEA301;
 }
 
-.nav-btn{
+.nav-options ul {
+    gap: 32px;
+    font-weight: bold;
+    font-size: 20px;
+    list-style: none;
+}
+
+.nav-options ul li a {
+    text-decoration: none;
+}
+
+
+.nav-options ul li:hover {
+    text-shadow: 0px 0px 28.3px #FEA301;
+}
+
+.nav-btn {
     background-color: #FEA301;
     border: 1px solid #FEA301;
     transition: 0.3s;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
     border: 1px solid #FEA301;
     color: #FEA301;
 }
 
-.primary-card-btn{
+.primary-card-btn {
     color: #FFFFFF;
     font-family: "Raleway", serif;
     padding: 15px 25px;
@@ -128,67 +136,67 @@ nav{
 
 /* === banner === */
 
-.banner{
+.banner {
     justify-content: space-between;
     align-items: center;
     margin-top: 18px;
 }
 
-.vision-content{
+.vision-content {
     width: 55%;
     height: 57%;
 }
 
-.vision-content h1{
+.vision-content h1 {
     font-weight: bold;
     font-size: 3.5rem;
     line-height: 61px;
 }
 
-.vision-content p{
+.vision-content p {
     font-size: 1.25rem;
     padding: 24px 0px;
 }
 
-.banner-btn{
+.banner-btn {
     background-color: black;
     border: 1px solid black;
     transition: 0.3s;
 }
 
-.banner-btn:hover{
+.banner-btn:hover {
     color: black;
     border: 1px solid black;
 }
 
 /* ==== Curriculum Section ==== */
 
-.background-img{
+.background-img {
     background-image: url("../assets/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.curriculum{
+.curriculum {
     text-align: center;
     width: 80%;
-    margin: 80px auto; 
+    margin: 80px auto;
 }
 
-.curriculum h1{
+.curriculum h1 {
     font-weight: bold;
     font-size: 2.87rem;
     line-height: 57px;
     padding-bottom: 80px;
 }
 
-.curriculum-cards{
+.curriculum-cards {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     width: 488px;
     height: 635px;
     flex-direction: column;
@@ -200,57 +208,58 @@ nav{
     transition: 0.3s;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0px 0px 28.3px rgba(0, 0, 0, 0.15);
 }
 
-.card-1{
+.card-1 {
     background-image: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
     border: 1px solid #DEFFFF;
 }
 
-.card-2{
+.card-2 {
     background-image: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
     border: 1px solid #FFF4DC;
 }
 
-.card-3{
+.card-3 {
     background-image: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
     border: 1px solid #F2E8FF;
 }
 
-.card h3{
+.card h3 {
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 30px;
 }
 
-.read-more{
+.read-more {
     margin-top: 20px;
     cursor: pointer;
     font-weight: bold;
 }
-.read-more-1{
+
+.read-more-1 {
     color: #64C8FF;
 }
 
-.read-more-2{
+.read-more-2 {
     color: #F0AA00;
 }
 
-.read-more-3{
+.read-more-3 {
     color: #8700FF;
 }
 
 /* ==== arrow ==== */
 
-.arrows{
+.arrows {
     justify-content: center;
     gap: 10px;
     margin: 80px 0px;
 }
 
-.arrows button{
+.arrows button {
     background-color: #FEA301;
     height: 60px;
     width: 60px;
@@ -264,7 +273,7 @@ nav{
     transition: 0.3s;
 }
 
-.arrows button:hover{
+.arrows button:hover {
     background-color: transparent;
     height: 60px;
     width: 60px;
@@ -280,47 +289,47 @@ nav{
 
 /* ==== Our Stories Card ==== */
 
-.section-bg-img{
+.section-bg-img {
     background-image: linear-gradient(0deg, rgba(254, 161, 1, 0.342), rgba(255, 255, 255, 1)), url("../assets/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.our-stories{
+.our-stories {
     width: 80%;
     margin: 0px auto;
     text-align: center;
 }
 
-.our-stories h1{
+.our-stories h1 {
     font-weight: bold;
     font-size: 2.8rem;
     margin-bottom: 80px;
 }
 
-.class-storie-card{
+.class-storie-card {
     width: 560px;
     text-align: left;
     border-radius: 16px;
 }
 
-.class-storie-card img{
+.class-storie-card img {
     width: 100%;
-    border-radius: 16px 16px 0px  0px ;
+    border-radius: 16px 16px 0px 0px;
 }
 
-.card-content button{
+.card-content button {
     background-color: #3CD8E8;
 }
 
-.card-content{
+.card-content {
     background-color: #FFFFFF;
     padding: 0px 38px 80px 38px;
     margin-top: -30px;
-    border-radius: 16px;    
+    border-radius: 16px;
 }
 
-.card-content h3{
+.card-content h3 {
     padding: 45px 0px;
     font-weight: bold;
     font-size: 1.5rem;
@@ -328,12 +337,12 @@ nav{
 
 /* === Story mini card === */
 
-.st-card{
+.st-card {
     background-color: #FFFFFF;
     border-radius: 16px;
 }
 
-.st-card img{
+.st-card img {
     width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
@@ -344,43 +353,43 @@ nav{
     margin-top: -30px;
 }
 
-.mini-card-content button{
+.mini-card-content button {
     background-color: #95B226;
 }
 
-.mini-card-content p{
+.mini-card-content p {
     font-weight: bold;
     font-size: 0.93rem;
     padding: 25px 0px;
     line-height: 29px;
 }
 
-#guiter-btn{
+#guiter-btn {
     background-color: #5D58F0;
 }
 
 /* === card grid === */
 
-.card-stories{
+.card-stories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-#spn-card{
+#spn-card {
     grid-row: span 2;
 }
 
 /* === View all button === */
 
-.view-all-btn{
+.view-all-btn {
     margin: 80px 0px;
     background-color: black;
     border: 1px solid black;
     transition: 0.3s;
 }
 
-.view-all-btn:hover{
+.view-all-btn:hover {
     margin: 80px 0px;
     color: black;
     border: 1px solid black;
@@ -388,11 +397,11 @@ nav{
 
 /* ===== footer-content */
 
-footer{
+footer {
     background-color: #01ACFD;
 }
 
-.footer-content{
+.footer-content {
     width: 80%;
     margin: 0px auto;
     padding: 140px 0px;
@@ -401,19 +410,19 @@ footer{
 
 /* ===== Logo ===== */
 
-.kids-logo{
+.kids-logo {
     gap: 10px;
     align-items: center;
     color: #FFFFFF;
 }
 
-.kids-logo h1{
+.kids-logo h1 {
     font-weight: bold;
     font-size: 42px;
     line-height: 40px;
 }
 
-.kids-education p{
+.kids-education p {
     font-size: 20px;
     padding-top: 35px;
     color: #FFFFFF;
@@ -421,22 +430,22 @@ footer{
 
 /* ===== about-school ===== */
 
-.about-school h3{
+.about-school h3 {
     font-weight: bold;
     font-size: 24px;
     color: #FFFFFF;
 }
 
-.about-school ul{
+.about-school ul {
     padding: 32px 0px;
     list-style: none;
 }
 
-.about-school ul li{
+.about-school ul li {
     padding: 10px 0px;
 }
 
-.about-school ul li a{
+.about-school ul li a {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 20px;
@@ -445,147 +454,197 @@ footer{
 
 /* ===== Social-media ===== */
 
-.social-media h3{
+.social-media h3 {
     font-weight: bold;
     font-size: 26px;
     color: #FFFFFF;
     padding-bottom: 32px;
 }
 
-.img-left-padding{
+.img-left-padding {
     padding-left: 10px;
 }
-.social-media img{
+
+.social-media img {
     cursor: pointer;
 }
 
 /* === media query === */
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
     /* Button */
 
-    .primary-btn{
+    .primary-btn {
         font-size: 16PX;
     }
 
     /* nav */
 
-    .content-width{
+    .content-width {
         width: 100%;
         margin: 0;
     }
-     nav{
+
+    nav {
         border: 1px solid #FEA301;
         padding: 12px 0px 12px 16px;
-     }
-    .hide{
+    }
+
+    .hide {
         display: none;
     }
-    .full-screen-hide{
+
+    .full-screen-hide {
         display: initial;
     }
-    .icon{
+
+    .icon {
         font-size: 30px;
         padding-right: 16px;
     }
 
     /* banner */
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
     }
-    .vision-content{
+
+    .vision-content {
         text-align: center;
         padding: 20px 0px;
+        width: 100%;
     }
-    .vision-content h1{
-        font-size: 32px;
+
+    .vision-content h1 {
+        font-size: 2rem;
         line-height: normal;
     }
-    .vision-content p{
+
+    .vision-content p {
         font-size: 14px;
         font-weight: 500;
-        padding: 18px 0px;
+        padding: 30px 0px;
     }
-    .vision-img{
+
+    .vision-img {
         width: 94%;
         height: 56%;
     }
 
     /* Card */
 
-    .curriculum h1{
+    .curriculum h1 {
         font-weight: bold;
         font-size: 2rem;
+        padding-bottom: 40px;
     }
 
     /* Stories */
 
-    .our-stories h1{
+    .our-stories h1 {
         font-weight: bold;
         font-size: 2rem;
+        padding-bottom: 0px;
     }
 
     /* mini-card */
 
-    .card-stories{
-        grid-template-columns: 1fr;
+    .card-stories {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .primary-card-btn {
+        padding: 15px 25px;
+        font-size: 10px;
+    }
+    .mini-card-content {
+        padding: 0px 30px;
     }
 
     /* footer */
 
-    .footer-content{
+    .footer-content {
         flex-direction: column;
     }
 
-    .about-school{
+    .about-school {
         margin: 50px 0px;
     }
 
     /* marque */
 
-    .headline{
+    .headline {
         border: none;
     }
 }
 
 /* ===medium device=== */
 
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media screen and (min-width: 576px) and (max-width: 992px) {
 
-    .hide-medium{
+    .hide-medium {
         display: none;
     }
 
     /* cards */
 
-    .card-stories{
+    .card-stories {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    #spn-card{
+
+    #spn-card {
         grid-column: span 2;
         margin: auto;
     }
-    .img-left-padding{
+
+    .img-left-padding {
         padding-left: 0px;
     }
 
-    .banner{
-        flex-direction: column-reverse;
+
+
+    .vision-content {
+        text-align: center;
+        padding: 20px 0px;
     }
 
-    .nav-btn{
-    padding: 10px 30px;
-    font-size: 16px;
+    .vision-content h1 {
+        font-size: 32px;
+        line-height: normal;
     }
 
-    .nav-options{
-        gap: 20px;
-        font-weight: bold;
+    /* Nav */
+
+    .nav-btn {
+        padding: 10px 30px;
         font-size: 16px;
-        padding: 0px 10px;
     }
 
+    .nav-btn:hover {
+        padding: 10px 30px;
+        font-size: 16px;
+        border: 1px solid #FEA301;
+        color: #FEA301;
+    }
+
+    .nav-options ul {
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    /* curriculum */
+    .curriculum h1 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    /* stories */
+
+    .our-stories h1 {
+        font-weight: bold;
+        font-size: 2rem;
+    }
 }
